@@ -1,0 +1,164 @@
+.infographic-container {
+	position:relative;
+}
+#infographic-wrapper {
+	width:100%;
+	position:relative;
+	margin:0 auto;
+}
+#infographic-panel-container {
+	position:relative;
+}
+ @media screen and (min-width:769px) {
+	#infographic-panel-container {
+		width:100%;
+		max-width:610px;
+		position:absolute;
+		top:0;
+		left:50%;
+		transform:translateX(-50%);
+				z-index:10;
+	}
+		#infographic-wrapper {
+				padding-bottom:40px;
+	}
+}
+#infographic-panel {
+	color:#fff;
+	width:100%;
+	min-height:100px;
+	position:absolute;
+	top:100%;
+	left:0;
+	z-index:10;
+	transition:background .2s ease,height .2s ease;
+	display:none;
+	opacity:0;
+	padding:20px 40px 20px 20px;
+}
+.infographic-column {
+	padding:0;
+}
+#infographic-panel .infographic-panel-content {
+	display:none;
+	transition:height ease-in 0.3s;
+	padding-right:25px;
+}
+#infographic-panel .infographic-panel-content a {
+	color:#fff;
+	text-decoration:none;
+	border-bottom:1px solid #fff;
+	-ms-transition:all 200ms ease-in-out;
+	-webkit-transition:all 200ms ease-in-out;
+	-moz-transition:all 200ms ease-in-out;
+	transition:all 200ms ease-in-out;
+	padding-bottom:2px;
+}
+#infographic-panel .infographic-panel-content a:hover,#infographic-panel .infographic-panel-content a:focus {
+	border-bottom:2px solid #fff;
+	padding-bottom:1px;
+}
+#infographic-panel .infographic-panel-content.infographic-panel-active {
+	display:block;
+}
+#infographic-panel .infographic-panel-content p,#infographic-panel .infographic-panel-content ul {
+		line-height:1.5em;
+		font-size:1.142rem;
+}
+#infographic-panel .infographic-panel-content ul {
+	padding-left:20px;
+		margin-bottom:10px;
+}
+.infographic-panel-arrow {
+	height:20px;
+	width:20px;
+	display:block;
+	position:absolute;
+	top:-13px;
+	left:50%;
+	z-index:1;
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	transform:translateX(-50%);
+}
+.infographic-panel-close {
+	height:20px;
+	width:20px;
+	display:none;
+	position:absolute;
+	right:20px;
+	top:20px;
+	z-index:1;
+}
+.infographic-panel-close:hover {
+		cursor:pointer;
+}
+.infographic-panel-close.infographic-panel-active {
+	display:block;
+	opacity:1;
+}
+#infographic-arrow {
+	transition:fill .2s ease;
+}
+.svg-container {
+	display:inline-block;
+	 position:relative;
+	 width:100%;
+	 padding-bottom:73%;
+		 vertical-align:middle;
+		 overflow:hidden;
+}
+#Data_Possibilities {
+	display:inline-block;
+	 position:absolute;
+	 top:0;
+	 left:50%;
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	transform:translateX(-50%);
+}
+#Circle_Discover_Stroke,#Circle_Trust_Stroke,#Circle_Describe_Stroke,#Circle_Predict_Stroke,#Circle_Optimise_Stroke,#Circle_Empower_Stroke,#Circle_Embed_Stroke {
+	display:none;
+		stroke-width:1;
+}
+#Circle_Discover_Stroke,#Circle_Trust_Stroke,#Circle_Describe_Stroke {
+		stroke:#DF3326;
+}
+	#Circle_Predict_Stroke,#Circle_Optimise_Stroke {
+		stroke:#A32022;
+}
+	#Circle_Empower_Stroke,#Circle_Embed_Stroke {
+		stroke:#602420;
+}
+ .selected #Circle_Discover_Stroke,.selected #Circle_Trust_Stroke,	.selected #Circle_Describe_Stroke,.selected #Circle_Predict_Stroke,	.selected #Circle_Optimise_Stroke,.selected #Circle_Empower_Stroke,.selected #Circle_Embed_Stroke,	#Circle_Discover_1:hover #Circle_Discover_Stroke,#Circle_Trust_2:hover #Circle_Trust_Stroke,	#Circle_Describe_3:hover #Circle_Describe_Stroke,#Circle_Predict_4:hover #Circle_Predict_Stroke,	#Circle_Optimise_5:hover #Circle_Optimise_Stroke,#Circle_Empower_6:hover #Circle_Empower_Stroke,#Circle_Embed_7:hover #Circle_Embed_Stroke {
+		display:block;
+}
+@media screen and (max-width:768px) {
+	#infographic-panel {
+		margin-top:20px;
+		padding:20px;
+	}
+	.infographic-panel-close {
+		top:20px;
+		right:20px;
+	}
+}
+#Circle_Discover_1,#Circle_Trust_2,#Circle_Describe_3,#Circle_Predict_4,#Circle_Optimise_5,#Circle_Empower_6,#Circle_Embed_7 {
+	opacity:0;
+	-webkit-transform:scale(0);
+	-ms-transform:scale(0);
+	transform:scale(0);
+	-ms-transform-origin:50% 50%;
+	-webkit-transform-origin:50% 50%;
+	transform-origin:50% 50%;
+	transition:all ease-in .3s;
+}
+	#Circle_Discover_1:hover,#Circle_Trust_2:hover,#Circle_Describe_3:hover,#Circle_Predict_4:hover,#Circle_Optimise_5:hover,#Circle_Empower_6:hover,#Circle_Embed_7:hover {
+		cursor:pointer;
+}
+#Circle_Discover_1.animated,#Circle_Trust_2.animated,#Circle_Describe_3.animated,#Circle_Predict_4.animated,#Circle_Optimise_5.animated,#Circle_Empower_6.animated,#Circle_Embed_7.animated {
+	opacity:1;
+	-webkit-transform:scale(1);
+	-ms-transform:scale(1);
+	transform: scale(1);
+}
